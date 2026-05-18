@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage> {
         if (message.contains("INTRUDER") || message.contains("GAS")) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
+              // here the page of te stuff int hus is also called as the main thing in theplace
               content: Text(
                 message,
                 style: const TextStyle(
@@ -73,6 +74,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text("Smart Room Center"),
+        // even here the samee thing in the place of the app bar is the same thign
         backgroundColor: Colors.indigo,
         elevation: 0,
       ),
